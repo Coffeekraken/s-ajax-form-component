@@ -34,12 +34,14 @@ Provide a simple and declarative way to send a form through ajax with a success/
 1. **[Demo](http://components.coffeekraken.io/app/s-ajax-form-component)**
 2. [Install](#readme-install)
 3. [Get Started](#readme-get-started)
-4. [Javascript API](doc/js)
-5. [Sugar Web Components Documentation](https://github.com/coffeekraken/sugar/blob/master/doc/webcomponent.md)
-6. [Browsers support](#readme-browsers-support)
-7. [Contribute](#readme-contribute)
-8. [Who are Coffeekraken?](#readme-who-are-coffeekraken)
-9. [Licence](#readme-license)
+4. [Success/error status](#readme-success-error-status)
+5. [Success/error message display mecanism](#readme-success-error-message-mecanism)
+6. [Javascript API](doc/js)
+7. [Sugar Web Components Documentation](https://github.com/coffeekraken/sugar/blob/master/doc/webcomponent.md)
+8. [Browsers support](#readme-browsers-support)
+9. [Contribute](#readme-contribute)
+10. [Who are Coffeekraken?](#readme-who-are-coffeekraken)
+11. [Licence](#readme-license)
 
 <a name="readme-install"></a>
 ## Install
@@ -61,7 +63,9 @@ Then simply use it inside your html like so:
 
 ```html
 <form is="s-ajax-form" action="..." method="POST">
-	<div s-ajax-form-success="message"></div>
+	<div s-ajax-form-success>
+		Your message has been sent successfuly
+	</div>
 	<div s-ajax-form-error>
 		Something went wrong...
 	</div>
