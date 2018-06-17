@@ -1,8 +1,37 @@
-# Attributes
+# SAjaxFormComponent
+
+Extends **SWebComponent**
+
+Provide a simple and declarative way to send a form through ajax with a success/error display mecanism built in.
+Features:
+1. Simple declarative way to send a form through ajax
+2. Keep track of the form status through simple `error` and `success` attributes
+3. Display the success/error message easily
+4. Many more...
+
+
+### Example
+```html
+	<form is="s-ajax-form" action="..." method="POST">
+	<div s-ajax-form-success>
+		Your message has been sent successfuly
+	</div>
+	<div s-ajax-form-error>
+		Something went wrong...
+	</div>
+	<!-- your form here... -->
+</form>
+```
+Author : Olivier Bossel <olivier.bossel@gmail.com>
+
+
+
+
+## Attributes
 
 Here's the list of available attribute to set on the element.
 
-## action
+### action
 
 Set the action to send the form to
 
@@ -11,7 +40,7 @@ Type : **{ [String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Referen
 Default : **null**
 
 
-## method
+### method
 
 Set the method used to send the form.
 
@@ -22,7 +51,7 @@ Values : **GET,POST**
 Default : **POST**
 
 
-## enctype
+### enctype
 
 Content type header that will be sent with the request
 
@@ -33,7 +62,7 @@ Values : **application/x-www-form-urlencoded,multipart/form-data,text/plain**
 Default : **application/x-www-form-urlencoded**
 
 
-## resetOnSuccess
+### resetOnSuccess
 
 Specify if need to reset the form on success on not
 
@@ -42,7 +71,7 @@ Type : **{ [Boolean](https://developer.mozilla.org/fr/docs/Web/JavaScript/Refere
 Default : **true**
 
 
-## stateTimeout
+### stateTimeout
 
 Specify a timeout to remove the state attributes after the form submission
 
@@ -51,7 +80,7 @@ Type : **{ Integer }**
 Default : **null**
 
 
-## responseType
+### responseType
 
 Specify the response type wanted from the server.
 
@@ -62,7 +91,7 @@ Values : **json,text**
 Default : **json**
 
 
-## auth
+### auth
 
 Authorization header formated in an object of username and password properties.
 
@@ -71,14 +100,14 @@ Type : **{ [String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Referen
 Default : **{}**
 
 
-## headers
+### headers
 
 Custom headers object
 
 Type : **{ [Object](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Object) }**
 
 
-## s-ajax-form-success
+### s-ajax-form-success
 
 Attribute that has to be present on the HTMLElement you want to be the success message holder.
 It will have the `active` attribute on it when the form has been successfuly sended.
@@ -89,7 +118,7 @@ the success message has to be displayed.
 
 Type : **{ [String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String) }**
 
-### Example
+#### Example
 ```html
 	<form is="s-ajax-form" ...>
 	<!-- with a "get path" -->
@@ -108,7 +137,7 @@ Type : **{ [String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Referen
 </form>
 ```
 
-## s-ajax-form-error
+### s-ajax-form-error
 
 Attribute that has to be present on the HTMLElement you want to be the error message holder.
 It will have the `active` attribute on it when the form has been successfuly sended.
@@ -119,7 +148,7 @@ the error message has to be displayed.
 
 Type : **{ [String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String) }**
 
-### Example
+#### Example
 ```html
 	<form is="s-ajax-form" ...>
 	<!-- with a "get path" -->
@@ -140,14 +169,14 @@ Type : **{ [String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Referen
 
 
 
-# Methods
+## Methods
 
 
-## this._refElms
+### this._refElms
 
 Save the references of html elements needed by the component
 
 
-## submit
+### submit
 
 Submit the form

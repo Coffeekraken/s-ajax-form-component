@@ -29,6 +29,13 @@
 
 Provide a simple and declarative way to send a form through ajax with a success/error display mecanism built in.
 
+## Features
+
+1. Simple declarative way to send a form through ajax
+2. Keep track of the form status through simple `error` and `success` attributes
+3. Display the success/error message easily
+4. Many more...
+
 ## Table of content
 
 1. **[Demo](http://components.coffeekraken.io/app/s-ajax-form-component)**

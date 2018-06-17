@@ -46,6 +46,29 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+/**
+ * @name 		SAjaxFormComponent
+ * @extends 	SWebComponent
+ * Provide a simple and declarative way to send a form through ajax with a success/error display mecanism built in.
+ * Features:
+ * 1. Simple declarative way to send a form through ajax
+ * 2. Keep track of the form status through simple `error` and `success` attributes
+ * 3. Display the success/error message easily
+ * 4. Many more...
+ *
+ * @example 	html
+ * <form is="s-ajax-form" action="..." method="POST">
+ * 	<div s-ajax-form-success>
+ * 		Your message has been sent successfuly
+ * 	</div>
+ * 	<div s-ajax-form-error>
+ * 		Something went wrong...
+ * 	</div>
+ * 	<!-- your form here... -->
+ * </form>
+ *
+ * @author 		Olivier Bossel <olivier.bossel@gmail.com>
+ */
 var SAjaxFormComponent = function (_native) {
 	_inherits(SAjaxFormComponent, _native);
 
