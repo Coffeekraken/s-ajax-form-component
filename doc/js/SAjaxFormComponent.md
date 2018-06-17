@@ -172,11 +172,6 @@ Type : **{ [String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Referen
 ## Methods
 
 
-### this._refElms
-
-Save the references of html elements needed by the component
-
-
 ### submit
 
 Submit the form

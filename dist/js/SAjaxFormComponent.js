@@ -90,9 +90,7 @@ var SAjaxFormComponent = function (_native) {
 		value: function componentWillMount() {
 			_get2(SAjaxFormComponent.prototype.__proto__ || Object.getPrototypeOf(SAjaxFormComponent.prototype), 'componentWillMount', this).call(this);
 
-			/**
-    * Save the references of html elements needed by the component
-    */
+			// Save the references of html elements needed by the component
 			this._refElms = {
 				success: null,
 				error: null

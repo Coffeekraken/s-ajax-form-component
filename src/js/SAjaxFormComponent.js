@@ -182,9 +182,7 @@ export default class SAjaxFormComponent extends native(HTMLFormElement) {
 	componentWillMount() {
 		super.componentWillMount();
 
-		/**
-		 * Save the references of html elements needed by the component
-		 */
+		// Save the references of html elements needed by the component
 		this._refElms = {
 			success : null,
 			error : null
