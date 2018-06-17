@@ -106,6 +106,20 @@ When the form has been sent, depending on the response status, the form will be 
 1. If the form has been **sent with success**, the `s-ajax-form-success` HTMLElement will have the `active` attribute.
 2. If the form has **not been sent properly**, the `s-ajax-form-error` HTMLElement will have the `active` attribute.
 
+Here's a simple example:
+
+```html
+<form is="s-ajax-form" action="..." method="POST">
+	<div s-ajax-form-success>
+		Your message has been sent successfuly
+	</div>
+	<div s-ajax-form-error>
+		Something went wrong...
+	</div>
+	<!-- your form here... -->
+</form>
+```
+
 #### Inject success/error message from the response
 
 Let's consider our server response like so:
