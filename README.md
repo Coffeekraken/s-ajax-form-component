@@ -74,8 +74,8 @@ Then simply use it inside your html like so:
 
 When your form has been sent with success, or maybe not, it will take one a another attribute depending on the state. Here's the two attributes:
 
-1. `success`: When the form has been sent with success
-2. `error`: When the form has not been sent correctly
+1. `success`: **When the form has been sent with success**
+2. `error`: **When the form has not been sent correctly**
 
 #### Display state timeout
 
@@ -86,7 +86,7 @@ You can specify a timeout in order to automatically remove the state attributes 
 </form>
 ```
 
-This will make the `error` or `success` attribute to be removed 4 seconds after the form submission.
+This will make the `error` or `success` attribute to be **removed 4 seconds after the form submission.**
 
 <a id="readme-success-error-message-mecanism"></a>
 ## Success/error message display mecanism
@@ -94,8 +94,8 @@ This will make the `error` or `success` attribute to be removed 4 seconds after 
 The webcomponent integrate a simple but powerful way to handle the success/error display of your form.
 This mecanism start with two attributes that you can add to any HTMLElement that will hold the success/error message. Here's the two attributes:
 
-1. `s-ajax-form-success`: Put this attribute on the element that (will) hold your success message
-2. `s-ajax-form-error`: Put this attribute on the element that (will) hold your error message
+1. `s-ajax-form-success`: Put this attribute on the element that (will) hold **your success message**
+2. `s-ajax-form-error`: Put this attribute on the element that (will) hold **your error message**
 
 When the form has been sent, depending on the response status, the form will be in success or error state. **The according HTMLElement will then have the `active` attribute on itself.**
 
@@ -144,7 +144,7 @@ Here's a simple example:
 </form>
 ```
 
-If you don't specify any timeout, the default value will be the `stateTimeout` property.
+If you don't specify any timeout, the default value will be the `stateTimeout` property described above.
 
 <a id="readme-browsers-support"></a>
 ## Browsers support
