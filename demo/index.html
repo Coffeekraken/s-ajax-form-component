@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="dist/css/style.css" />
+</head>
+<body>
+
+	<form id="my-form" is="s-ajax-form" state-timeout="5000" action="api.php" method="POST" headers='{"coco":"world"}'>
+
+		<div s-ajax-form-success="message"></div>
+		<div s-ajax-form-error timeout="4000">
+			An unexpected error has occured. Please try again later...
+		</div>
+
+		<div class="form-group m-b">
+			<input type="text" class="form-input" name="firstname" placeholder="Firstname" required />
+		</div>
+		<s-validator for="firstname"></s-validator>
+
+		<div class="form-group">
+			<input type="text" class="form-input" name="lastname" placeholder="Lastname" required />
+		</div>
+		<s-validator for="lastname"></s-validator>
+
+		<div class="form-group m-t">
+			<input type="submit" class="btn" value="Send form" />
+		</div>
+	</form>
+
+	<button onclick="document.querySelector('#my-form').submit()">
+		Submit the form programaticaly
+	</button>
+
+	<script src="dist/js/app.js"></script>
+</body>
+</html>

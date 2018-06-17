@@ -1,0 +1,38 @@
+@import 'node_modules/coffeekraken-sugar/index';
+@import 'node_modules/coffeekraken-s-typography-component/index';
+@import 'node_modules/coffeekraken-s-button-component/index';
+@import 'node_modules/coffeekraken-s-form-component/index';
+
+@include s-setup(());
+@include s-init();
+@include s-classes();
+
+@include s-typography-classes();
+@include s-button-classes();
+@include s-form-classes();
+
+body {
+	padding: s-space(bigger);
+}
+
+[s-ajax-form-success],
+[s-ajax-form-error] {
+	display:none;
+	padding: s-space(default);
+	margin-bottom: s-space(default);
+
+	&[active] {
+		display: block;
+	}
+}
+
+[s-ajax-form-success] {
+	background: s-color(success, -opacity .2);
+	border:1px solid s-color(success);
+	color: s-color(success);
+}
+[s-ajax-form-error] {
+	background: s-color(error, -opacity .2);
+	border:1px solid s-color(error);
+	color: s-color(error);
+}
