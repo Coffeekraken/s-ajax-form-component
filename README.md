@@ -32,7 +32,7 @@ Provide a simple and declarative way to send a form through ajax with a success/
 ## Features
 
 1. Simple declarative way to send a form through ajax
-2. Keep track of the form status through simple `error` and `success` attributes
+2. Keep track of the form status through simple `loading`, `error` and `success` attributes
 3. Display the success/error message easily
 4. Many more...
 
@@ -41,7 +41,7 @@ Provide a simple and declarative way to send a form through ajax with a success/
 1. **[Demo](http://components.coffeekraken.io/app/s-ajax-form-component)**
 2. [Install](#readme-install)
 3. [Get Started](#readme-get-started)
-4. [Success/error status](#readme-success-error-status)
+4. [Form status](#readme-form-status)
 5. [Success/error message display mecanism](#readme-success-error-message-mecanism)
 6. [Javascript API](doc/js)
 7. [Sugar Web Components Documentation](https://github.com/coffeekraken/sugar/blob/master/doc/webcomponent.md)
@@ -80,11 +80,12 @@ Then simply use it inside your html like so:
 </form>
 ```
 
-<a id="readme-success-error-status"></a>
-## Success/error status
+<a id="readme-form-status"></a>
+## Form status
 
-When your form has been sent with success, or maybe not, it will take one a another attribute depending on the state. Here's the two attributes:
+When your form is bein/has been sent with success, or maybe not, it will take one a another attribute depending on the state. Here's the two attributes:
 
+1. `loading`: **When the form is currently sending data**
 1. `success`: **When the form has been sent with success**
 2. `error`: **When the form has not been sent correctly**
 
