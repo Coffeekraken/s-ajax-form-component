@@ -15,6 +15,13 @@ body {
 	padding: s-space(bigger);
 }
 
+form[is="s-ajax-form"] {
+
+	&[loading] {
+		opacity: .5;
+	}
+}
+
 [s-ajax-form-success],
 [s-ajax-form-error] {
 	display:none;
